@@ -1,0 +1,38 @@
+.product-detail {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.product-detail img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.product-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.product-info .desc {
+  margin: 1rem 0;
+  color: #555;
+}
+
+.product-info .price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
