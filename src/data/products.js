@@ -1,17 +1,45 @@
 const products = [
   {
     id: 1,
-    name: "Classic White T-Shirt",
+    name: "Black Snoopy Hour",
     price: 19.99,
-    image: "https://via.placeholder.com/300x300?text=White+T-Shirt",
-    description: "Soft and comfy white t-shirt, 100% cotton."
+    image: "/images/supportsnoopyhour.png",
+    description: "A relaxed-fit t-shirt featuring the iconic Snoopy in night mode."
   },
   {
     id: 2,
-    name: "Premium Black Tee",
+    name: "Happy Hour Patch Tee",
     price: 24.99,
-    image: "https://via.placeholder.com/300x300?text=Black+T-Shirt",
-    description: "Stylish black tee with premium fabric."
+    image: "/images/happyhourpatch.jpg",
+    description: "Clean black tee featuring the Happy Hour patch design."
+  },
+  {
+    id: 3,
+    name: "Drunkman Tee",
+    price: 22.99,
+    image: "/images/drunkman.png",
+    description: "Bold and funny print for the weekend warrior in you."
+  },
+  {
+    id: 4,
+    name: "Felix The Cat Tee",
+    price: 21.99,
+    image: "/images/felix.png",
+    description: "Retro Felix the Cat design printed on soft cotton."
+  },
+  {
+    id: 5,
+    name: "Happy Hour Vibes",
+    price: 23.99,
+    image: "/images/happyhour.png",
+    description: "Celebrate happy hour any hour in this fun graphic tee."
+  },
+  {
+    id: 6,
+    name: "Ship In A Bottle",
+    price: 26.99,
+    image: "/images/ship-in-bottle.jpg",
+    description: "Elegant nautical design for ocean lovers."
   }
 ];
 

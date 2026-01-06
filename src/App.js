@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
+import Navbar from './components/Navbar'; // ✅
 
 const App = () => {
   return (
     <Router>
+      <Navbar /> {/* ✅ Add this outside Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetail />} />

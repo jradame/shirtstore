@@ -1,15 +1,22 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../data/products';
+import { useCart } from '../context/CartContext';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
   const { id } = useParams();
+  const { addToCart } = useCart();
   const product = products.find(p => p.id === parseInt(id));
 
   if (!product) {
     return <div className="product-detail">Product not found</div>;
   }
+
+  const handleAddToCart = () => {
+    addToCart(product); // ✅ <--- must be actual product object
+    alert(`${product.name} added to cart!`);
+  };
 
   return (
     <div className="product-detail">
@@ -18,7 +25,9 @@ const ProductDetail = () => {
         <h2>{product.name}</h2>
         <p className="desc">{product.description}</p>
         <p className="price">${product.price}</p>
-        <button className="add-to-cart-btn">Add to Cart</button>
+        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
       </div>
     </div>
   );
